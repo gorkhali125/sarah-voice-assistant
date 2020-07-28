@@ -7,7 +7,7 @@ import audioprocessor as ap
 if __name__ == "__main__":
 
     def sarah(spoken_text):        
-        request_input = qp.queryprocessor(spoken_text)
+        request_input = qp.queryProcessor(spoken_text)
         if(request_input):
             qr.queryResponder(request_input)
 

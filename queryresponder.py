@@ -4,7 +4,7 @@ import os
 
 text_responses = [
     'I am fine',
-    'hello',
+    'Hello',
     'I have no idea. Can you tell me your name please?'
 ]
 

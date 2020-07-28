@@ -21,7 +21,7 @@ def generateRequestDict(request_index, request_type, spoken_text):
     return request_input
 
 
-def queryprocessor(spoken_text):
+def queryProcessor(spoken_text):
     if(spoken_text in text_queries):
         return generateRequestDict(text_queries.index(spoken_text), 'text_queries', spoken_text)
     # elif(spoken_text in command_queries):

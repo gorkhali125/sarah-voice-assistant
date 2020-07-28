@@ -11,7 +11,7 @@ def listen():
         data = ""
         try:
             data = r.recognize_google(audio)
-            print("You asked: " + data.lower())
+            print("You said: " + data.lower())
         except sr.UnknownValueError:
             print("Google Speech Recognition could not understand audio")
         except sr.RequestError as e:
@@ -22,7 +22,6 @@ def listen():
 
 
 def say(audioString):
-    print("I replied: " + audioString)
     tts = gTTS(text=audioString, lang='en')
     tts.save("speech.mp3")
     os.system("mpg321 speech.mp3")
