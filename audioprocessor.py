@@ -6,8 +6,9 @@ from gtts import gTTS
 def listen():
     r = sr.Recognizer()
     with sr.Microphone() as source:
+        r.adjust_for_ambient_noise(source)
         print("Say something!")
-        audio = r.record(source, 5)
+        audio = r.listen(source)
         data = ""
         try:
             data = r.recognize_google(audio)
