@@ -17,6 +17,7 @@ text_responses = [
 #     'stackoverflow' : 'https://stackoverflow.com/search?q='
 # }
 
+
 def queryResponder(request_input):
     if(request_input['type'] == 'text_queries'):
         ap.say(text_responses[request_input['index']])

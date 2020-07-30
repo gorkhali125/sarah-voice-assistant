@@ -7,11 +7,13 @@ def listen():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         r.adjust_for_ambient_noise(source)
-        print("Say something!")
+        print("Listening...")
         audio = r.listen(source)
         data = ""
+
         try:
-            data = r.recognize_google(audio)
+            print("Recognizing...")
+            data = r.recognize_google(audio, language='en')
             print("You said: " + data.lower())
         except sr.UnknownValueError:
             print("Google Speech Recognition could not understand audio")

@@ -13,6 +13,7 @@ text_queries = [
 #     'stackoverflow'
 # ]
 
+
 def generateRequestDict(request_index, request_type, spoken_text):
     request_input = dict()
     request_input['index'] = request_index
