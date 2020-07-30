@@ -67,6 +67,14 @@
         {
             "q": "time",
             "a": "The current time is"
+        },
+        {
+            "q": "vs code",
+            "a": "Opening vscode"
+        },
+        {
+            "q": "joke",
+            "a": "Sure. In a moment!"
         }
     ]
 }

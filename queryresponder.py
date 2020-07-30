@@ -1,6 +1,7 @@
-import audioprocessor as ap
 import os
 import time
+import audioprocessor as ap
+import pyjokes
 
 
 def checkCommands(text):
@@ -12,6 +13,10 @@ def checkCommands(text):
         os.system("libreoffice --writer")
     elif(text == "time"):
         ap.say(time.ctime())
+    elif(text == "vs code"):
+        os.system("code")
+    elif(text == "joke"):
+        ap.say(pyjokes.get_joke())
 
 
 def queryResponder(request_input, answers):
