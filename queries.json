@@ -17,7 +17,7 @@
             "a": "well, that's great"
         },
         {
-            "q": "your name",
+            "q": "what is your name",
             "a": "my name is {assistantName}"
         },
         {
@@ -25,32 +25,48 @@
             "a": "I am {assistantName}, your voice assistant."
         },
         {
-            "q": "made you",
-            "a": "I am created by {userName}."
+            "q": "who made you",
+            "a": "I am created by Deepesh."
         },
         {
-            "q": "created you",
-            "a": "I am created by {userName}."
+            "q": "who created you",
+            "a": "I am created by Deepesh."
         },
         {
-            "q": "am i",
+            "q": "who am i",
             "a": "You are {userName}, my creator."
         },
         {
-            "q": "are you created",
+            "q": "why are you created",
             "a": "I am created to make your life easier."
         },
         {
-            "q": "do you exist",
+            "q": "why do you exist",
             "a": "You should know why I exist because you are already using me."
         },
         {
-            "q": "is love",
+            "q": "what is love",
             "a": "Sorry I can't answer that. I am yet to feel it."
         },
         {
-            "q": "love you",
+            "q": "i love you",
             "a": "It's hard for me to understand love."
+        },
+        {
+            "q": "powerpoint",
+            "a": "Opening powerpoint."
+        },
+        {
+            "q": "excel",
+            "a": "Opening excel."
+        },
+        {
+            "q": "writer",
+            "a": "Opening writer."
+        },
+        {
+            "q": "time",
+            "a": "The current time is"
         }
     ]
 }
