@@ -20,9 +20,10 @@ def wishUser():
 
 
 def setUsername():
-    ap.say("What should i call you sir")
-    uname = ap.listen()
-    ap.say("Welcome " + uname + ". How can i Help you.")
+    ap.say("What should i call you")
+    userName = ap.listen()
+    ap.say("Welcome " + userName + ". How can i Help you.")
+    return userName
 
 
 def setAssistantName():
