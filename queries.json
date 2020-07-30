@@ -6,7 +6,7 @@
         },
         {
             "q": "how are you",
-            "a": "i am fine. how are you"
+            "a": "i am fine, thank you. how are you {userName}"
         },
         {
             "q": "fine",
@@ -17,12 +17,40 @@
             "a": "well, that's great"
         },
         {
-            "q": "what's your name",
+            "q": "your name",
             "a": "my name is {assistantName}"
         },
         {
-            "q": "what is your name",
-            "a": "my name is {assistantName}"
+            "q": "who are you",
+            "a": "I am {assistantName}, your voice assistant."
+        },
+        {
+            "q": "made you",
+            "a": "I am created by {userName}."
+        },
+        {
+            "q": "created you",
+            "a": "I am created by {userName}."
+        },
+        {
+            "q": "am i",
+            "a": "You are {userName}, my creator."
+        },
+        {
+            "q": "are you created",
+            "a": "I am created to make your life easier."
+        },
+        {
+            "q": "do you exist",
+            "a": "You should know why I exist because you are already using me."
+        },
+        {
+            "q": "is love",
+            "a": "Sorry I can't answer that. I am yet to feel it."
+        },
+        {
+            "q": "love you",
+            "a": "It's hard for me to understand love."
         }
     ]
 }

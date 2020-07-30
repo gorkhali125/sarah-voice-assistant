@@ -1,17 +1,19 @@
 import time
 
+import os
 import queryprocessor as qp
 import queryresponder as qr
 import audioprocessor as ap
 import utils as ut
 import queryparser as qep
+import subprocess
 
 if __name__ == "__main__":
 
     ut.clearConsole()
     assistantName = "Sarah"
-    ut.wishUser()
-    userName = ut.setUsername()
+    userName = subprocess.check_output("whoami", shell=True).decode("utf-8")
+    ut.wishUser(userName)
 
     [questions, answers] = qep.queryParser()
 

@@ -6,6 +6,8 @@ def queryResponder(request_input, answers):
         answer = answers[request_input['index']]
         reply = answer.replace(
             "{assistantName}", request_input['assistantName'])
+        reply = reply.replace(
+            "{userName}", request_input['userName'])
         ap.say(reply)
     else:
-        ap.say('Sorry, i didn\'t get you. I still have to know a lot of things.')
+        ap.say('Sorry, i didn\'t get you. I still have to learn a lot of things.')

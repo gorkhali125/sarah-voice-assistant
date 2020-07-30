@@ -7,20 +7,13 @@ def clearConsole():
     return os.system('clear')
 
 
-def wishUser():
+def wishUser(userName):
     hour = int(datetime.datetime.now().hour)
     if hour >= 0 and hour < 12:
-        ap.say("Good Morning!")
+        ap.say("Good Morning " + userName + "! How can i Help you.")
 
     elif hour >= 12 and hour < 18:
-        ap.say("Good Afternoon!")
+        ap.say("Good Afternoon " + userName + "! How can i Help you.")
 
     else:
-        ap.say("Good Evening!")
-
-
-def setUsername():
-    ap.say("What should i call you")
-    userName = ap.listen()
-    ap.say("Welcome " + userName + ". How can i Help you.")
-    return userName
+        ap.say("Good Evening " + userName + "! How can i Help you.")

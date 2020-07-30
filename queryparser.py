@@ -6,8 +6,8 @@ def queryParser():
         data = json.load(json_file)
         questions = []
         answers = []
-        for p in data['queries']:
-            questions.append(p['q'])
-            answers.append(p['a'])
+        for singlequery in data['queries']:
+            questions.append(singlequery['q'])
+            answers.append(singlequery['a'])
 
     return [questions, answers]
