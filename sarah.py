@@ -17,6 +17,7 @@ if __name__ == "__main__":
         if(request_input):
             qr.queryResponder(request_input)
 
+    time.sleep(1)
     while 1:
         spoken_text = ap.listen()
         sarah(spoken_text)

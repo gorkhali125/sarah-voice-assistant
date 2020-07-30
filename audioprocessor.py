@@ -1,11 +1,13 @@
 import speech_recognition as sr
 import os
+import utils as ut
 from gtts import gTTS
 
 
 def listen():
     r = sr.Recognizer()
     with sr.Microphone() as source:
+        ut.clearConsole()
         r.adjust_for_ambient_noise(source)
         print("Listening...")
         audio = r.listen(source)
