@@ -28,5 +28,8 @@ def queryProcessor(spoken_text, questions):
     elif 'joke' in spoken_text:
         return generateRequestDict(questions.index("joke"), 'command_queries', "joke")
 
+    elif 'wikipedia' in spoken_text:
+        return generateRequestDict(questions.index("wikipedia"), 'command_queries', spoken_text)
+
     elif(len(spoken_text) > 0):
         return generateRequestDict(0, 'not_found', spoken_text)

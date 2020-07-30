@@ -75,6 +75,10 @@
         {
             "q": "joke",
             "a": "Sure. In a moment!"
+        },
+        {
+            "q": "wikipedia",
+            "a": "Searching Wikipedia. Please wait a while.."
         }
     ]
 }

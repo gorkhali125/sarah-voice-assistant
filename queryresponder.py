@@ -2,21 +2,37 @@ import os
 import time
 import audioprocessor as ap
 import pyjokes
+import wikipedia
 
 
 def checkCommands(text):
     if(text == "powerpoint"):
         os.system("libreoffice --draw")
+
     elif(text == "excel"):
         os.system("libreoffice --calc")
+
     elif(text == "writer"):
         os.system("libreoffice --writer")
+
     elif(text == "time"):
         ap.say(time.ctime())
+
     elif(text == "vs code"):
         os.system("code")
+
     elif(text == "joke"):
         ap.say(pyjokes.get_joke())
+
+    elif("wikipedia" in text):
+        query = text.replace("wikipedia", "").strip()
+        if(query == ""):
+            ap.say("Sorry! I cannot find anything to search for...")
+        else:
+            results = wikipedia.summary(query, sentences=1)
+            ap.say("According to Wikipedia...")
+            print(results)
+            ap.say(results)
 
 
 def queryResponder(request_input, answers):
