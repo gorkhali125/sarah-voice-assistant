@@ -8,4 +8,4 @@ def queryResponder(request_input, answers):
             "{assistantName}", request_input['assistantName'])
         ap.say(reply)
     else:
-        ap.say('I don\'t know everything.')
+        ap.say('Sorry, i didn\'t get you. I still have to know a lot of things.')
