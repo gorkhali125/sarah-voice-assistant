@@ -24,10 +24,3 @@ def setUsername():
     userName = ap.listen()
     ap.say("Welcome " + userName + ". How can i Help you.")
     return userName
-
-
-def setAssistantName():
-    ap.say("What name do you give me sir")
-    assistantName = ap.listen()
-    ap.say("Thanks for the lovely name")
-    return assistantName

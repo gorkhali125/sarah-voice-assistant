@@ -1,0 +1,28 @@
+{
+    "queries": [
+        {
+            "q": "hello",
+            "a": "hello there"
+        },
+        {
+            "q": "how are you",
+            "a": "i am fine. how are you"
+        },
+        {
+            "q": "fine",
+            "a": "well, that's great"
+        },
+        {
+            "q": "good",
+            "a": "well, that's great"
+        },
+        {
+            "q": "what's your name",
+            "a": "my name is {assistantName}"
+        },
+        {
+            "q": "what is your name",
+            "a": "my name is {assistantName}"
+        }
+    ]
+}
