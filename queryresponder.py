@@ -35,8 +35,23 @@ def checkCommands(text):
             ap.say(results)
 
     elif(text == "shutdown system"):
-        os.system("shutdown -h now")
-        exit()
+        confirm = ap.listen()
+        if("yes" in confirm):
+            os.system("shutdown -h +1")
+            ap.say("Shutting down in 1 minute")
+        else:
+            ap.say("Aborting Shutdown..")
+
+    elif(text == "restart system"):
+        confirm = ap.listen()
+        if("yes" in confirm):
+            os.system("shutdown -r +1")
+            ap.say("Restarting in 1 minute")
+        else:
+            ap.say("Aborting Restart..")
+            
+    elif(text in ["cancel shutdown", "cancel restart"]):
+        os.system("shutdown -c")
 
 def queryResponder(request_input, answers):
     if(request_input['type'] == 'text_queries'):
@@ -54,4 +69,4 @@ def queryResponder(request_input, answers):
         checkCommands(request_input['text'])
 
     else:
-        ap.say('Sorry, i didn\'t get you.')
+        ap.say('Sorry, i didn\'t get ' + request_input['text'])

@@ -82,7 +82,19 @@
         },
         {
             "q": "shutdown system",
-            "a": "Shutting down..."
+            "a": "Are you sure?"
+        },
+        {
+            "q": "restart system",
+            "a": "Are you sure?"
+        },
+        {
+            "q": "cancel shutdown",
+            "a": "Aborting Shutdown.."
+        },
+        {
+            "q": "cancel restart",
+            "a": "Aborting Restart.."
         }
     ]
 }
