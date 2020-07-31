@@ -79,6 +79,10 @@
         {
             "q": "wikipedia",
             "a": "Searching Wikipedia. Please wait a while.."
+        },
+        {
+            "q": "shutdown system",
+            "a": "Shutting down..."
         }
     ]
 }

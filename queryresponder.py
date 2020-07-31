@@ -34,6 +34,9 @@ def checkCommands(text):
             print(results)
             ap.say(results)
 
+    elif(text == "shutdown system"):
+        os.system("shutdown -h now")
+        exit()
 
 def queryResponder(request_input, answers):
     if(request_input['type'] == 'text_queries'):
