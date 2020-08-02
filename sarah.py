@@ -10,6 +10,7 @@ import subprocess
 
 if __name__ == "__main__":
 
+    started = False
     ut.clearConsole()
     assistantName = "Sarah"
     userName = subprocess.check_output("whoami", shell=True).decode("utf-8")
@@ -27,4 +28,14 @@ if __name__ == "__main__":
     time.sleep(1)
     while 1:
         spoken_text = ap.listen()
-        sarah(spoken_text)
+        if(spoken_text == 'start listening'):
+            ap.say('Ready for your command sire!')
+            started = True
+
+        if(spoken_text == 'stop listening'):
+            if(started):
+                ap.say('Talk to you later sire!')
+            started = False
+
+        if(started and spoken_text != "start listening"):
+            sarah(spoken_text)
