@@ -119,6 +119,10 @@
         {
             "q": "search stackoverflow",
             "a": "Searching {searchText} on stack overflow.."
+        },
+        {
+            "q": "take a note",
+            "a": "What should I write?"
         }
     ]
 }

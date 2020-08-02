@@ -1,6 +1,7 @@
 import audioprocessor as ap
 import querycommands as qc
 import browsercommands as bc
+import utilitycommands as uc
 
 
 def queryResponder(request_input, answers):
@@ -13,6 +14,7 @@ def queryResponder(request_input, answers):
         ap.say(reply)
         qc.queryCommands(request_input['text'])
         bc.browserCommands(request_input['text'], answer)
+        uc.utilityCommands(request_input['text'])
 
     elif(request_input['type'] == 'command_queries'):
         answer = answers[request_input['index']]
