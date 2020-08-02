@@ -5,7 +5,7 @@ import pyjokes
 import wikipedia
 
 
-def checkCommands(text):
+def queryCommands(text):
     if(text == "powerpoint"):
         os.system("libreoffice --draw")
 

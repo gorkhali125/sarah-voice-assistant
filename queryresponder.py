@@ -10,12 +10,12 @@ def queryResponder(request_input, answers):
         reply = reply.replace(
             "{userName}", request_input['userName'])
         ap.say(reply)
-        qc.checkCommands(request_input['text'])
+        qc.queryCommands(request_input['text'])
 
     elif(request_input['type'] == 'command_queries'):
         answer = answers[request_input['index']]
         ap.say(answer)
-        qc.checkCommands(request_input['text'])
+        qc.queryCommands(request_input['text'])
 
     else:
         ap.say('Sorry, i didn\'t get ' + request_input['text'])
