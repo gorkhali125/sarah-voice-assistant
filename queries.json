@@ -95,6 +95,30 @@
         {
             "q": "cancel restart",
             "a": "Aborting Restart.."
+        },
+        {
+            "q": "open youtube",
+            "a": "Opening youtube.."
+        },
+        {
+            "q": "open google",
+            "a": "Opening Google.."
+        },
+        {
+            "q": "open stack overflow",
+            "a": "Opening stackoverflow.."
+        },
+        {
+            "q": "search youtube",
+            "a": "Searching {searchText} on youtube.."
+        },
+        {
+            "q": "search google",
+            "a": "Searching {searchText} on google.."
+        },
+        {
+            "q": "search stackoverflow",
+            "a": "Searching {searchText} on stack overflow.."
         }
     ]
 }
